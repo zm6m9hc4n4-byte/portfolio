@@ -381,64 +381,94 @@
         <div class="p-6 md:p-8 lg:p-10">
           <header class="flex flex-wrap items-center gap-3 text-xs font-medium text-brand-600">
             <span class="inline-flex items-center justify-center h-6 px-2 rounded-md bg-brand-50 text-brand-600 font-semibold tracking-wider uppercase">业务背景</span>
-            <span class="tracking-wider uppercase text-ink-500">海外增长模式</span>
           </header>
           <h3 class="mt-3 text-xl md:text-2xl font-bold tracking-tight text-ink-900">
-            海外增长闭环 · 四个环节
+            海外增长模式
           </h3>
 
-          <!-- Horizontal 4-stage flow -->
-          <div class="mt-6 flex flex-col md:flex-row md:items-stretch gap-3 md:gap-2">
+          <!-- Horizontal 3-stage flow (Stage 1 = wide container with 2 sub-cards) -->
+          <!-- On desktop: 3 columns with stage 1 wider; on mobile: stack vertically -->
+          <div class="mt-6 flex flex-col lg:flex-row lg:items-stretch gap-3 lg:gap-2">
 
-            <!-- Stage 1: 内容生产 — mine -->
-            <div class="flow-node flow-node-key flex-1 rounded-xl border-2 border-brand-500 bg-brand-50/60 p-3.5 shadow-ring min-h-[150px] flex flex-col relative">
-              <span class="absolute -top-2 left-3 inline-flex items-center gap-1 text-[10px] font-semibold tracking-wider uppercase text-white bg-brand-500 rounded-full px-2 py-0.5">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
-                我 · 主导
-              </span>
-              <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600 mt-1">① 内容生产</div>
-              <div class="mt-1.5 text-sm font-semibold text-ink-900">AIGC 低成本量产内容</div>
-              <p class="mt-auto pt-2 text-[11px] text-ink-500 leading-relaxed">洞察并落地内容生产的 AI 提效</p>
+            <!-- ===== Stage ①: 内容生产 (wide container with shared claim + 2 sub-cards) ===== -->
+            <div class="flow-node flow-node-key rounded-xl border-2 border-brand-500 bg-brand-50/60 shadow-ring p-4 md:p-5 flex flex-col relative lg:flex-[1.9]">
+              <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600">① 内容生产</div>
+
+              <!-- 核心难题（问题层）-->
+              <div class="mt-2 rounded-lg border border-ink-200 bg-ink-50/80 border-l-4 border-l-rose-400 px-3 py-2">
+                <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-rose-500">核心难题</div>
+                <p class="mt-1 text-xs md:text-[13px] text-ink-800 leading-relaxed">
+                  做好海外内容 = 一整条<span class="font-semibold text-ink-900">稀缺的本地化人才链</span>；每开新市场<span class="font-semibold text-ink-900">成本翻倍</span>
+                </p>
+              </div>
+
+              <!-- Shared claim -->
+              <div class="mt-2 rounded-lg border border-brand-200 bg-white/70 px-3 py-2">
+                <div class="flex items-start gap-2">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-600 shrink-0 mt-0.5"><path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
+                  <p class="text-xs md:text-[13px] text-ink-800 leading-relaxed">
+                    用 <span class="font-semibold text-brand-700">AI 替代稀缺能力</span>，变成<span class="font-semibold">低成本可复制的机制</span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- 2 sub-cards: A · AIGC | B · 舆情 -->
+              <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-2.5 flex-1">
+                <!-- Sub-card A: AIGC -->
+                <div class="rounded-lg border border-brand-200 bg-white p-3 flex flex-col relative">
+                  <span class="absolute -top-2 left-2 inline-flex items-center gap-1 text-[10px] font-semibold tracking-wider uppercase text-white bg-brand-500 rounded-full px-2 py-0.5">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
+                    我 · 主导
+                  </span>
+                  <div class="mt-1 text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600">A · AIGC</div>
+                  <p class="mt-1.5 text-xs text-ink-700 leading-relaxed">
+                    用 AI 替代外模 / 拍摄 / 翻译 / 剪辑 / 口播等专业人才生产内容
+                  </p>
+                </div>
+
+                <!-- Sub-card B: 舆情分析 -->
+                <div class="rounded-lg border border-brand-200 bg-white p-3 flex flex-col relative">
+                  <span class="absolute -top-2 left-2 inline-flex items-center gap-1 text-[10px] font-semibold tracking-wider uppercase text-white bg-brand-500 rounded-full px-2 py-0.5">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
+                    我 · 主导
+                  </span>
+                  <div class="mt-1 text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600">B · AI 舆情分析</div>
+                  <p class="mt-1.5 text-xs text-ink-700 leading-relaxed">
+                    用 AI 替代<span class="font-medium text-ink-900">稀缺的本地用户视角判断力</span>，产出对内容与产品的建议
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div class="flow-arrow flex items-center justify-center text-ink-300 self-center md:self-auto">
-              <svg class="rotate-90 md:rotate-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            <!-- Arrow 1 → 2 -->
+            <div class="flow-arrow flex items-center justify-center text-ink-300 self-center lg:self-auto">
+              <svg class="rotate-90 lg:rotate-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
             </div>
 
-            <!-- Stage 2: 矩阵分发 — mine (实习期) -->
-            <div class="flow-node flow-node-key flex-1 rounded-xl border-2 border-brand-500 bg-brand-50/60 p-3.5 shadow-ring min-h-[150px] flex flex-col relative">
+            <!-- ===== Stage ②: 分发至海外各社媒 ===== -->
+            <div class="flow-node flow-node-key rounded-xl border-2 border-brand-500 bg-brand-50/60 shadow-ring p-4 md:p-5 flex flex-col relative lg:flex-1">
               <span class="absolute -top-2 left-3 inline-flex items-center gap-1 text-[10px] font-semibold tracking-wider uppercase text-white bg-brand-500 rounded-full px-2 py-0.5">
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
                 我 · 实习期参与
               </span>
-              <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600 mt-1">② 矩阵分发</div>
-              <div class="mt-1.5 text-sm font-semibold text-ink-900">素人矩阵号规模化铺设</div>
-              <p class="mt-auto pt-2 text-[11px] text-ink-500 leading-relaxed">负责上千账号获取与海外环境模拟等底层基建</p>
+              <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600 mt-1">② 分发至海外各社媒</div>
+              <div class="mt-1.5 text-sm font-semibold text-ink-900 leading-snug">素人矩阵号规模化铺设 + 多平台分发，获取自然搜索与信息流流量</div>
+              <p class="mt-auto pt-2 text-[11px] text-ink-500 leading-relaxed">负责上千账号获取与海外环境模拟等底层基建；POI 提升搜索命中</p>
             </div>
 
-            <div class="flow-arrow flex items-center justify-center text-ink-300 self-center md:self-auto">
-              <svg class="rotate-90 md:rotate-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            <!-- Arrow 2 → 3 -->
+            <div class="flow-arrow flex items-center justify-center text-ink-300 self-center lg:self-auto">
+              <svg class="rotate-90 lg:rotate-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
             </div>
 
-            <!-- Stage 3: 流量获取 — NOT mine -->
-            <div class="flow-node flex-1 rounded-xl border border-ink-100 bg-white p-3.5 min-h-[150px] flex flex-col">
-              <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-ink-400">③ 流量获取</div>
-              <div class="mt-1.5 text-sm font-medium text-ink-700">内容分发至海外各大社媒，获取自然搜索与信息流流量</div>
-              <p class="mt-1 text-[11px] text-ink-400 leading-relaxed">POI 全覆盖提升搜索命中</p>
-            </div>
-
-            <div class="flow-arrow flex items-center justify-center text-ink-300 self-center md:self-auto">
-              <svg class="rotate-90 md:rotate-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-            </div>
-
-            <!-- Stage 4: 转化承接 — mine (主导) -->
-            <div class="flow-node flow-node-key flex-1 rounded-xl border-2 border-brand-500 bg-brand-50/60 p-3.5 shadow-ring min-h-[150px] flex flex-col relative">
+            <!-- ===== Stage ③: 钩子承接转化 ===== -->
+            <div class="flow-node flow-node-key rounded-xl border-2 border-brand-500 bg-brand-50/60 shadow-ring p-4 md:p-5 flex flex-col relative lg:flex-1">
               <span class="absolute -top-2 left-3 inline-flex items-center gap-1 text-[10px] font-semibold tracking-wider uppercase text-white bg-brand-500 rounded-full px-2 py-0.5">
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
                 我 · 主导
               </span>
-              <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600 mt-1">④ 转化承接</div>
-              <div class="mt-1.5 text-sm font-semibold text-ink-900">钩子设计 + 漏斗优化</div>
+              <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600 mt-1">③ 钩子承接转化</div>
+              <div class="mt-1.5 text-sm font-semibold text-ink-900 leading-snug">数据分析 + 漏斗模型 + A/B 测试，承接内容流量、转化为支付</div>
               <p class="mt-auto pt-2 text-[11px] text-ink-500 leading-relaxed">站外引流 → 站内承接 → 转化提效</p>
             </div>
 
@@ -478,7 +508,7 @@
                 <div class="rounded-xl border border-brand-200 bg-brand-50/50 p-4 md:p-5">
                   <div class="text-[10px] font-semibold tracking-[0.18em] uppercase text-brand-600">思路</div>
                   <p class="mt-2 text-sm text-ink-700 leading-relaxed">
-                    将外模 / 拍摄 / 翻译 / 剪辑 / 口播等<span class="text-ink-900">稀缺能力</span>产品化为 <span class="text-brand-700 font-semibold">近零边际成本</span>的 AIGC 生产能力。
+                    将外模 / 拍摄 / 翻译 / 剪辑 / 口播等<span class="text-ink-900">稀缺能力</span>产品化为 <span class="text-brand-700 font-semibold">低边际成本</span>的 AIGC 生产能力。
                   </p>
                 </div>
               </div>
@@ -516,57 +546,79 @@
                 <div>
                   <div class="font-semibold text-ink-900">AI 数字人</div>
 
-                  <!-- Decision flow chain — unified container -->
+                  <!-- Decision flow chain — 3-stage unified container -->
                   <div class="mt-4 rounded-2xl border border-ink-100 bg-ink-50/40 p-4 md:p-5">
                     <div class="flex flex-col lg:flex-row lg:items-stretch gap-2.5 lg:gap-2">
 
-                      <!-- Node 1 -->
-                      <div class="flow-node flex-1 rounded-xl border border-ink-100 bg-white p-3.5 min-h-[112px] flex flex-col">
-                        <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600">为什么做</div>
+                      <!-- Stage ① 为什么做 -->
+                      <div class="flow-node rounded-xl border border-ink-100 bg-white p-3.5 lg:w-[18%] flex flex-col">
+                        <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600">① 为什么做</div>
                         <p class="mt-1.5 text-sm text-ink-800 leading-snug">真人出镜<span class="font-semibold">信任感强、效果好</span>，但成本高、难在海外市场复制</p>
                         <p class="mt-auto pt-1.5 text-[11px] text-ink-400 leading-relaxed">用 AI 数字人兼顾出镜效果与低成本复制</p>
                       </div>
+
                       <div class="flow-arrow flex items-center justify-center text-ink-300 self-center lg:self-auto">
                         <svg class="rotate-90 lg:rotate-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
                       </div>
 
-                      <!-- Node 2 -->
-                      <div class="flow-node flex-1 rounded-xl border border-ink-100 bg-white p-3.5 min-h-[112px] flex flex-col">
-                        <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600">遇到的问题</div>
-                        <p class="mt-1.5 text-sm text-ink-800 leading-snug">图生视频 —— <span class="font-semibold">口型僵硬、人物一致性难保证</span></p>
+                      <!-- Stage ② 技术选型 — highlighted focal point -->
+                      <div class="flow-node flow-node-key flex-1 rounded-xl border-2 border-brand-500 bg-brand-50/60 p-3.5 shadow-ring flex flex-col">
+                        <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600">② 技术选型（完整链路）</div>
+
+                        <!-- Inner pipeline — nodes with inline mini captions -->
+                        <div class="mt-3 flex flex-col md:flex-row md:items-stretch gap-1.5 md:gap-1 flex-wrap">
+                          <!-- 输入 -->
+                          <div class="rounded-lg border border-brand-200 bg-white px-2 py-2 text-center shrink-0 min-w-[92px] flex flex-col">
+                            <div class="text-[9px] text-ink-400 leading-tight">输入</div>
+                            <div class="text-[11px] font-semibold text-ink-800 mt-0.5 leading-tight whitespace-nowrap">中文文案<br>+ 选形象</div>
+                            <div class="mt-auto pt-1.5 mt-1.5 border-t border-brand-100/70 text-[9.5px] text-ink-500 leading-snug">形象 = 模板视频 + 专属音色</div>
+                          </div>
+                          <svg class="rotate-90 md:rotate-0 text-brand-400 self-center shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                          <!-- LLM 口播润色 + 自检查 -->
+                          <div class="rounded-lg border border-brand-200 bg-white px-2 py-2 text-center shrink-0 min-w-[100px] flex flex-col">
+                            <div class="text-[9px] text-ink-400 leading-tight">润色</div>
+                            <div class="text-[11px] font-semibold text-ink-800 mt-0.5 leading-tight whitespace-nowrap">LLM 口播润色<br>+ 自检查</div>
+                            <div class="mt-auto pt-1.5 mt-1.5 border-t border-brand-100/70 text-[9.5px] text-ink-500 leading-snug">保证语言自然、多语言环境下表达准确</div>
+                          </div>
+                          <svg class="rotate-90 md:rotate-0 text-brand-400 self-center shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                          <!-- TTS 专属音色 -->
+                          <div class="rounded-lg border border-brand-200 bg-white px-2 py-2 text-center shrink-0 min-w-[88px] flex flex-col justify-center">
+                            <div class="text-[9px] text-ink-400 leading-tight">语音</div>
+                            <div class="text-[11px] font-semibold text-ink-800 mt-0.5 leading-tight whitespace-nowrap">TTS<br>专属音色</div>
+                          </div>
+                          <svg class="rotate-90 md:rotate-0 text-brand-400 self-center shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                          <!-- V2V 核心高亮 -->
+                          <div class="rounded-lg border-2 border-brand-600 bg-brand-100 px-2 py-2 text-center shrink-0 min-w-[100px] flex flex-col">
+                            <div class="text-[9px] font-bold text-brand-700 leading-tight">核心</div>
+                            <div class="text-[11px] font-bold text-ink-900 mt-0.5 leading-tight whitespace-nowrap">V2V<br>视频生视频</div>
+                            <div class="mt-auto pt-1.5 mt-1.5 border-t border-brand-300/60 text-[9.5px] text-brand-700 leading-snug">替代图生视频，解决自然性与生成一致性问题</div>
+                          </div>
+                          <svg class="rotate-90 md:rotate-0 text-brand-400 self-center shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                          <!-- 五维评测 -->
+                          <div class="rounded-lg border border-brand-200 bg-white px-2 py-2 text-center shrink-0 min-w-[80px] flex flex-col justify-center">
+                            <div class="text-[9px] text-ink-400 leading-tight">验证</div>
+                            <div class="text-[11px] font-semibold text-ink-800 mt-0.5 leading-tight whitespace-nowrap">五维<br>评测</div>
+                          </div>
+                          <svg class="rotate-90 md:rotate-0 text-brand-400 self-center shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                          <!-- 上线 -->
+                          <div class="rounded-lg bg-brand-500 px-2.5 py-2 text-center shrink-0 flex items-center justify-center">
+                            <div class="text-[11px] font-bold text-white leading-tight">上线</div>
+                          </div>
+                        </div>
                       </div>
+
                       <div class="flow-arrow flex items-center justify-center text-ink-300 self-center lg:self-auto">
                         <svg class="rotate-90 lg:rotate-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
                       </div>
 
-                      <!-- Node 3 — highlighted -->
-                      <div class="flow-node flow-node-key flex-1 rounded-xl border-2 border-brand-500 bg-brand-50/60 p-3.5 shadow-ring min-h-[112px] flex flex-col">
-                        <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600">技术选型</div>
-                        <p class="mt-1.5 text-sm text-ink-900 leading-snug">改用 <span class="font-semibold">"视频生视频"</span> 替代图生视频</p>
-                        <p class="mt-auto pt-1.5 text-[11px] text-ink-400 leading-relaxed">TTS + 表情语音同步 + 视频生成 · 三模型串联</p>
-                      </div>
-                      <div class="flow-arrow flex items-center justify-center text-ink-300 self-center lg:self-auto">
-                        <svg class="rotate-90 lg:rotate-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-                      </div>
-
-                      <!-- Node 4 — highlighted -->
-                      <div class="flow-node flow-node-key flex-1 rounded-xl border-2 border-brand-500 bg-brand-50/60 p-3.5 shadow-ring min-h-[112px] flex flex-col">
-                        <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600">评测定位</div>
-                        <p class="mt-1.5 text-sm text-ink-900 leading-snug">五维评测发现问题 → <span class="font-semibold">根因在上游形象</span>，非生成模型</p>
-                        <p class="mt-auto pt-1.5 text-[11px] text-ink-400 leading-relaxed">"实拍 vs AI"五维盲测，质感维度最弱</p>
-                      </div>
-                      <div class="flow-arrow flex items-center justify-center text-ink-300 self-center lg:self-auto">
-                        <svg class="rotate-90 lg:rotate-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-                      </div>
-
-                      <!-- Node 5 — result with unified big-number style -->
-                      <div class="flow-node flex-1 rounded-xl border border-ink-100 bg-white p-3.5 min-h-[112px] flex flex-col">
-                        <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600">结果</div>
-                        <div class="mt-1.5 flex items-baseline gap-1.5">
+                      <!-- Stage ③ 结果 -->
+                      <div class="flow-node rounded-xl border border-ink-100 bg-white p-3.5 lg:w-[18%] flex flex-col">
+                        <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600">③ 结果</div>
+                        <div class="mt-2 flex items-baseline gap-1.5 flex-wrap">
                           <span class="text-xl md:text-2xl font-bold tracking-tight text-brand-700 leading-none">200 万</span>
                           <span class="text-xs text-ink-500">单条最高播放</span>
                         </div>
-                        <p class="mt-auto pt-1.5 text-[11px] text-ink-400 leading-relaxed">均播接近实拍</p>
+                        <p class="mt-1.5 text-xs text-ink-600 leading-snug">五维评测验证，均播接近实拍</p>
                       </div>
 
                     </div>
@@ -579,68 +631,137 @@
                       </span>
                       <span class="text-ink-300 text-xs hidden md:inline">·</span>
                       <span class="text-xs md:text-sm text-ink-700 leading-relaxed flex-1 min-w-0">
-                        正在将数字人能力延伸至<span class="text-ink-900 font-medium">直播场景</span>，已自主跑通国内数字人直播流程
+                        已落地数字人<span class="text-ink-900 font-medium">录播直播</span>（长视频循环），正在探索向<span class="text-ink-900 font-medium">实时驱动直播</span>延伸
                       </span>
                     </div>
                   </div>
                 </div>
               </li>
 
-              <!-- ===== Sub-project 2: 韩语口播链路（横向技术管线） ===== -->
+              <!-- ===== Sub-project NEW: 素材批量生成（带决策与评测闭环的 workflow） ===== -->
               <li class="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1">
                 <span class="mt-2 h-1.5 w-1.5 rounded-full bg-brand-500/80"></span>
                 <div>
-                  <div class="font-semibold text-ink-900">韩语口播链路（AI Coding）</div>
+                  <div class="font-semibold text-ink-900">素材批量生成</div>
 
                   <div class="mt-4 rounded-2xl border border-ink-100 bg-ink-50/40 p-4 md:p-5">
 
-                    <!-- Pain point top -->
+                    <!-- 痛点 -->
                     <div class="flex items-center gap-2 text-xs text-ink-500">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-ink-400 shrink-0"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h0"/></svg>
-                      <span>痛点：<span class="text-ink-700">韩国市场缺翻译 / 口播人才</span></span>
+                      <span>痛点：<span class="text-ink-700">海外实拍依赖摄影人才，成本高、获取效率低</span></span>
                     </div>
 
-                    <!-- Pipeline row — same min-height as 数字人 nodes -->
+                    <!-- ===== Stage A: 输入 → 智能路由 (decision before split) ===== -->
                     <div class="mt-4 flex flex-col md:flex-row md:items-stretch gap-2 md:gap-1.5">
                       <div class="flow-node flex-1 rounded-xl border border-ink-100 bg-white px-3 py-3 text-center min-h-[72px] flex flex-col justify-center">
-                        <div class="text-[10px] font-medium tracking-wider uppercase text-ink-400">输入</div>
-                        <div class="mt-1 text-sm font-medium text-ink-800">中文文案</div>
+                        <div class="text-[9px] font-medium tracking-wider uppercase text-ink-400">起点</div>
+                        <div class="mt-0.5 text-[11px] font-semibold text-ink-800 leading-tight">输入指令</div>
                       </div>
                       <div class="flex items-center justify-center text-ink-300">
-                        <svg class="rotate-90 md:rotate-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                        <svg class="rotate-90 md:rotate-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
                       </div>
-                      <div class="flow-node flex-1 rounded-xl border border-ink-100 bg-white px-3 py-3 text-center min-h-[72px] flex flex-col justify-center">
-                        <div class="text-[10px] font-medium tracking-wider uppercase text-ink-400">翻译</div>
-                        <div class="mt-1 text-sm font-medium text-ink-800">韩语译文</div>
-                      </div>
-                      <div class="flex items-center justify-center text-ink-300">
-                        <svg class="rotate-90 md:rotate-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-                      </div>
-                      <!-- Key node -->
-                      <div class="flow-node flow-node-key flex-1 rounded-xl border-2 border-brand-500 bg-brand-50/60 px-3 py-3 text-center shadow-ring min-h-[72px] flex flex-col justify-center">
-                        <div class="text-[10px] font-semibold tracking-wider uppercase text-brand-600">核心洞察</div>
-                        <div class="mt-1 text-sm font-semibold text-ink-900">韵律停顿处理</div>
-                      </div>
-                      <div class="flex items-center justify-center text-ink-300">
-                        <svg class="rotate-90 md:rotate-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-                      </div>
-                      <div class="flow-node flex-1 rounded-xl border border-ink-100 bg-white px-3 py-3 text-center min-h-[72px] flex flex-col justify-center">
-                        <div class="text-[10px] font-medium tracking-wider uppercase text-ink-400">合成</div>
-                        <div class="mt-1 text-sm font-medium text-ink-800">TTS</div>
-                      </div>
-                      <div class="flex items-center justify-center text-ink-300">
-                        <svg class="rotate-90 md:rotate-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-                      </div>
-                      <div class="flow-node flex-1 rounded-xl border border-ink-100 bg-white px-3 py-3 text-center min-h-[72px] flex flex-col justify-center">
-                        <div class="text-[10px] font-medium tracking-wider uppercase text-ink-400">输出</div>
-                        <div class="mt-1 text-sm font-medium text-ink-800">韩语口播</div>
+                      <div class="flow-node flow-node-key flex-[1.8] rounded-xl border-2 border-brand-500 bg-brand-50/60 shadow-ring px-3 py-3 text-center min-h-[72px] flex flex-col justify-center">
+                        <div class="text-[9px] font-bold tracking-wider uppercase text-brand-600">① 关键判断</div>
+                        <div class="mt-0.5 text-xs font-bold text-ink-900 leading-tight">场景判断 · 智能路由</div>
+                        <div class="mt-0.5 text-[10px] text-ink-600 leading-tight">按场景自主判断走"文生视频"还是"图生视频"</div>
                       </div>
                     </div>
 
-                    <!-- Result bottom -->
-                    <div class="mt-3 pt-3 border-t border-ink-100 flex items-center gap-2 text-xs text-ink-600">
+                    <!-- 分流 indicator -->
+                    <div class="my-2 flex items-center gap-2">
+                      <div class="h-px flex-1 bg-brand-200/60"></div>
+                      <span class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-500">分流</span>
+                      <div class="h-px flex-1 bg-brand-200/60"></div>
+                    </div>
+
+                    <!-- ===== Stage B: two parallel paths ===== -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                      <!-- Path A: 文生视频 -->
+                      <div class="rounded-xl border border-ink-200 bg-white p-3 flex flex-col">
+                        <div class="flex items-center gap-1.5 mb-2">
+                          <span class="inline-flex items-center justify-center h-5 w-5 rounded-md bg-ink-100 text-ink-600 text-[10px] font-bold shrink-0">A</span>
+                          <span class="text-[11px] font-semibold text-ink-800">文生视频场景</span>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                          <div class="rounded-md border border-ink-100 bg-ink-50/40 px-2 py-1.5 flex items-center gap-1.5">
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-ink-500 shrink-0"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+                            <span class="text-[10.5px] text-ink-700 leading-tight">检索 Prompt 模板库</span>
+                          </div>
+                          <p class="text-[10px] text-ink-500 leading-snug pl-1">通用模板库 · 由运营按场景沉淀优秀 Prompt</p>
+                        </div>
+                      </div>
+
+                      <!-- Path B: 图生视频 -->
+                      <div class="rounded-xl border border-brand-200 bg-brand-50/30 p-3 flex flex-col">
+                        <div class="flex items-center gap-1.5 mb-2">
+                          <span class="inline-flex items-center justify-center h-5 w-5 rounded-md bg-brand-500 text-white text-[10px] font-bold shrink-0">B</span>
+                          <span class="text-[11px] font-semibold text-ink-800">图生视频场景</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-1.5">
+                          <div class="flex-1 flex flex-col gap-1">
+                            <div class="rounded-md border border-brand-200 bg-white px-2 py-1.5 flex items-center gap-1.5">
+                              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-600 shrink-0"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+                              <span class="text-[10.5px] text-ink-700 leading-tight">检索图片库（参考图）</span>
+                            </div>
+                            <p class="text-[10px] text-brand-600 font-medium leading-snug pl-1">打标参考图库 · 仅图生场景使用 · 规避车站等特殊场景失真</p>
+                          </div>
+                          <span class="text-brand-400 text-[10px] font-bold text-center sm:px-0.5 shrink-0 sm:mt-2">+</span>
+                          <div class="flex-1 flex flex-col gap-1">
+                            <div class="rounded-md border border-brand-200 bg-white px-2 py-1.5 flex items-center gap-1.5">
+                              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-600 shrink-0"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+                              <span class="text-[10.5px] text-ink-700 leading-tight">检索 Prompt 模板库</span>
+                            </div>
+                            <p class="text-[10px] text-ink-500 leading-snug pl-1">通用模板库 · 由运营按场景沉淀优秀 Prompt</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 汇合 indicator -->
+                    <div class="my-2 flex items-center gap-2">
+                      <div class="h-px flex-1 bg-brand-200/60"></div>
+                      <span class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-500 inline-flex items-center gap-1">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v6l-4 4M16 3v6l4 4M12 21V13"/></svg>
+                        汇合
+                      </span>
+                      <div class="h-px flex-1 bg-brand-200/60"></div>
+                    </div>
+
+                    <!-- ===== Stage C: 仿写 → 批量生成 ===== -->
+                    <div class="flex flex-col md:flex-row md:items-stretch gap-2 md:gap-1.5">
+                      <div class="flow-node flex-1 rounded-xl border border-ink-100 bg-white px-3 py-3 text-center min-h-[72px] flex flex-col justify-center">
+                        <div class="text-[9px] font-medium tracking-wider uppercase text-ink-400">仿写</div>
+                        <div class="mt-0.5 text-[11px] font-semibold text-ink-800 leading-tight">仿写 Prompt</div>
+                      </div>
+                      <div class="flex items-center justify-center text-ink-300">
+                        <svg class="rotate-90 md:rotate-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                      </div>
+                      <div class="flow-node flex-[1.4] rounded-xl border border-ink-100 bg-white px-3 py-3 text-center min-h-[72px] flex flex-col justify-center">
+                        <div class="text-[9px] font-medium tracking-wider uppercase text-ink-400">输出</div>
+                        <div class="mt-0.5 text-[11px] font-semibold text-ink-800 leading-tight">批量生成新视频<span class="text-ink-400 font-normal">（成片素材）</span></div>
+                      </div>
+                    </div>
+
+                    <!-- 评测闭环 -->
+                    <div class="mt-4 rounded-xl border border-dashed border-ink-200 bg-white/40 px-3.5 py-2.5">
+                      <div class="flex items-center gap-2 flex-wrap">
+                        <span class="text-[10px] font-semibold tracking-[0.14em] uppercase text-ink-500 shrink-0">评测闭环</span>
+                        <span class="text-ink-300 text-xs hidden sm:inline shrink-0">·</span>
+                        <div class="flex items-center gap-1.5 flex-wrap text-xs text-ink-600">
+                          <span class="rounded-md bg-ink-100 px-2 py-0.5 text-[11px] text-ink-700">线上点赞 / 下载数据</span>
+                          <span class="text-ink-400 text-[11px]">+</span>
+                          <span class="rounded-md bg-ink-100 px-2 py-0.5 text-[11px] text-ink-700">人工评测</span>
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-500 shrink-0"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                          <span class="rounded-md bg-brand-100 px-2 py-0.5 text-[11px] font-semibold text-brand-700">迭代 Prompt 模板库</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Result KPI -->
+                    <div class="mt-3 pt-3 border-t border-ink-100 flex items-center gap-2">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-500 shrink-0"><path d="M20 6 9 17l-5-5"/></svg>
-                      <span>独立用 AI Coding 搭建全链路，<span class="text-ink-900 font-medium">已落地韩国内容运营</span></span>
+                      <span class="text-xs text-ink-600">核心留存指标与人工持平，<span class="text-ink-900 font-semibold">提效不降质</span></span>
                     </div>
                   </div>
                 </div>
@@ -742,7 +863,7 @@
               AI 海外舆情分析平台
             </h3>
             <p class="mt-5 text-ink-700 leading-relaxed md:text-lg max-w-3xl">
-              团队在国内做海外，难以本地视角理解用户。用 AI 替代稀缺的本地判断力，精准捕捉海外需求、产出产品建议。
+              用 AI 替代跨地域团队稀缺的本地用户视角判断力，使国内团队也能近本地视角捕捉海外需求、产出产品建议。
             </p>
 
             <!-- System architecture viz: main pipeline (采集 → LLM 分析 → 处置), each branches down -->
@@ -839,28 +960,39 @@
                       <div class="text-sm font-semibold text-ink-900">RAG 三层知识结构</div>
                     </div>
                     <div class="mt-3 space-y-1.5">
-                      <div class="rounded-lg border border-brand-100 bg-white px-2.5 py-1.5">
-                        <div class="flex items-baseline gap-2">
-                          <span class="text-[10px] font-semibold tracking-wider uppercase text-brand-600 shrink-0">L1</span>
-                          <span class="text-xs text-ink-700 leading-snug">本地出行背景与痛点</span>
+                      <!-- L1 强制注入 — always on -->
+                      <div class="rounded-lg border-2 border-brand-400 bg-brand-50 px-2.5 py-1.5">
+                        <div class="flex items-center justify-between gap-2">
+                          <div class="flex items-baseline gap-2">
+                            <span class="text-[10px] font-semibold tracking-wider uppercase text-brand-600 shrink-0">L1</span>
+                            <span class="text-xs text-ink-800 font-medium leading-snug">本地出行背景与痛点</span>
+                          </div>
+                          <span class="shrink-0 inline-flex items-center rounded-full bg-brand-500 px-1.5 py-0.5 text-[9px] font-bold text-white tracking-wide">强制注入</span>
                         </div>
                       </div>
+                      <!-- L2 按需检索 -->
                       <div class="rounded-lg border border-brand-100 bg-white px-2.5 py-1.5">
-                        <div class="flex items-baseline gap-2">
-                          <span class="text-[10px] font-semibold tracking-wider uppercase text-brand-600 shrink-0">L2</span>
-                          <span class="text-xs text-ink-700 leading-snug">历史验证有效的业务决策</span>
+                        <div class="flex items-center justify-between gap-2">
+                          <div class="flex items-baseline gap-2">
+                            <span class="text-[10px] font-semibold tracking-wider uppercase text-brand-600 shrink-0">L2</span>
+                            <span class="text-xs text-ink-700 leading-snug">历史验证有效的业务决策</span>
+                          </div>
+                          <span class="shrink-0 inline-flex items-center rounded-full border border-ink-200 bg-ink-50 px-1.5 py-0.5 text-[9px] font-semibold text-ink-500 tracking-wide">按需检索</span>
                         </div>
                       </div>
+                      <!-- L3 按需检索 -->
                       <div class="rounded-lg border border-brand-100 bg-white px-2.5 py-1.5">
-                        <div class="flex items-baseline gap-2">
-                          <span class="text-[10px] font-semibold tracking-wider uppercase text-brand-600 shrink-0">L3</span>
-                          <span class="text-xs text-ink-700 leading-snug">实时业务上下文</span>
+                        <div class="flex items-center justify-between gap-2">
+                          <div class="flex items-baseline gap-2">
+                            <span class="text-[10px] font-semibold tracking-wider uppercase text-brand-600 shrink-0">L3</span>
+                            <span class="text-xs text-ink-700 leading-snug">实时业务上下文</span>
+                          </div>
+                          <span class="shrink-0 inline-flex items-center rounded-full border border-ink-200 bg-ink-50 px-1.5 py-0.5 text-[9px] font-semibold text-ink-500 tracking-wide">按需检索</span>
                         </div>
                       </div>
                     </div>
-                    <p class="mt-3 text-[11px] text-ink-500 leading-relaxed flex items-center gap-1.5">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-500 shrink-0"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-                      让 LLM 具备<span class="text-ink-800 font-medium">本地业务判断力</span>
+                    <p class="mt-2.5 text-[11px] text-ink-500 leading-relaxed">
+                      <span class="text-ink-700 font-semibold">① 差异化检索策略</span>：本地痛点层强制注入保可靠，其余两层交模型按需检索省成本——平衡可靠性与成本
                     </p>
                   </div>
 
@@ -870,16 +1002,22 @@
                       <span class="inline-flex items-center justify-center h-7 w-7 rounded-md bg-brand-500 text-white shrink-0">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3 8-8M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h11"/></svg>
                       </span>
-                      <div class="text-sm font-semibold text-ink-900">分层评测</div>
+                      <div class="text-sm font-semibold text-ink-900">评测</div>
                     </div>
-                    <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      <div class="rounded-lg border border-brand-100 bg-white px-2.5 py-1.5 flex items-baseline gap-2">
-                        <span class="text-[10px] font-semibold tracking-wider uppercase text-ink-400 shrink-0">技术层</span>
-                        <span class="text-xs text-ink-700">RAG 召回质量 · 自测</span>
+                    <div class="mt-3 space-y-2">
+                      <!-- 检索层 -->
+                      <div class="rounded-lg border border-brand-100 bg-white px-2.5 py-1.5">
+                        <div class="flex items-baseline gap-2">
+                          <span class="text-[10px] font-semibold tracking-wider uppercase text-ink-400 shrink-0">检索层</span>
+                          <span class="text-xs text-ink-700 leading-snug">召回质量评测 + 运行时模型对结果自评、不达标则弃用（实时兜底）</span>
+                        </div>
                       </div>
-                      <div class="rounded-lg border border-brand-100 bg-white px-2.5 py-1.5 flex items-baseline gap-2">
-                        <span class="text-[10px] font-semibold tracking-wider uppercase text-ink-400 shrink-0">业务层</span>
-                        <span class="text-xs text-ink-700">AI 建议达标率 · 业务方评判</span>
+                      <!-- 输出层 -->
+                      <div class="rounded-lg border border-brand-100 bg-white px-2.5 py-1.5">
+                        <div class="flex items-baseline gap-2">
+                          <span class="text-[10px] font-semibold tracking-wider uppercase text-ink-400 shrink-0">输出层</span>
+                          <span class="text-xs text-ink-700">业务方人工评判达标率 → 反向迭代检索与 prompt</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -941,216 +1079,181 @@
               海外获客转化
             </h3>
             <p class="mt-5 text-ink-700 leading-relaxed md:text-lg max-w-3xl">
-              支撑海外社媒矩阵规模化获客，打通"引流 → 承接 → 转化"全链路：钩子设计拉新，漏斗分析提效。
+              支撑海外社媒矩阵规模化获客，打通"播放 → 承接 → 支付"转化链路。
             </p>
 
-            <ul class="mt-8 space-y-6 md:space-y-8 relative" id="p3-echo-canvas">
+            <!-- ===== Unified narrative: 主链路 · 三解法 · 诊断工具 ===== -->
+            <div class="mt-8 rounded-2xl border border-ink-100 bg-ink-50/40 p-4 md:p-6 space-y-6 md:space-y-7">
 
-              <!-- SVG connector overlay (desktop only) -->
-              <svg id="p3-echo-line" class="hidden lg:block pointer-events-none absolute inset-0 w-full h-full overflow-visible" aria-hidden="true">
-                <defs>
-                  <marker id="p3-echo-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                    <path d="M0,0 L10,5 L0,10 z" fill="#5E6AD2"/>
-                  </marker>
-                </defs>
-                <path id="p3-echo-path" d="" fill="none" stroke="#5E6AD2" stroke-width="1.5" stroke-dasharray="5 4" stroke-opacity="0.85" marker-end="url(#p3-echo-arrow)" marker-start="url(#p3-echo-arrow)"/>
-                <foreignObject id="p3-echo-label-fo" x="0" y="0" width="200" height="40" style="overflow:visible">
-                  <div xmlns="http://www.w3.org/1999/xhtml" id="p3-echo-label" class="inline-flex items-center gap-1.5 text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-700 bg-white border border-brand-200 rounded-full px-2.5 py-1 whitespace-nowrap shadow-soft">
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 1l4 4-4 4M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-                    内外呼应 · 内部专属感一致
+              <!-- ===== ① 主链路 ===== -->
+              <div>
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="text-[11px] font-bold tracking-[0.18em] uppercase text-ink-500">① 主链路</span>
+                  <div class="h-px flex-1 bg-ink-200/60"></div>
+                </div>
+
+                <!-- 播放 → 承接 → 支付 -->
+                <div class="flex flex-col md:flex-row md:items-stretch gap-2.5 md:gap-2">
+                  <div class="flow-node flex-1 rounded-xl border border-ink-100 bg-white p-3.5 text-center min-h-[78px] flex flex-col justify-center">
+                    <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-ink-400">起点</div>
+                    <div class="mt-1 text-base font-semibold text-ink-800 leading-snug">播放 + 引导用户<br>下载 App 搜码</div>
                   </div>
-                </foreignObject>
-              </svg>
-
-              <!-- ===== Sub 1: 引流机制 — 横向钩子路径 ===== -->
-              <li class="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1">
-                <span class="mt-2 h-1.5 w-1.5 rounded-full bg-brand-500/80"></span>
-                <div>
-                  <div class="flex items-center gap-2 flex-wrap">
-                    <span class="font-semibold text-ink-900">引流机制</span>
-                    <span class="text-[10px] font-semibold tracking-wider uppercase text-ink-400 border border-ink-200 rounded px-1.5 py-0.5">站外引流</span>
+                  <div class="flex items-center justify-center text-ink-300">
+                    <svg class="rotate-90 md:rotate-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
                   </div>
-
-                  <div class="mt-4 rounded-2xl border border-ink-100 bg-ink-50/40 p-4 md:p-5">
-                    <!-- Hook path -->
-                    <div class="flex flex-col md:flex-row md:items-stretch gap-2.5 md:gap-2">
-                      <!-- Stage 1: 泛流量 -->
-                      <div class="flow-node flex-1 rounded-xl border border-ink-100 bg-white p-3.5 min-h-[88px] flex flex-col justify-center">
-                        <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-ink-400">起点</div>
-                        <div class="mt-1.5 text-sm font-medium text-ink-800">社媒泛流量</div>
-                      </div>
-                      <div class="flex items-center justify-center text-ink-300">
-                        <svg class="rotate-90 md:rotate-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-                      </div>
-
-                      <!-- Stage 2: Hook — highlighted with echo marker -->
-                      <div id="hook-anchor" data-echo="A" class="flow-node flow-node-key flex-[1.4] rounded-xl border-2 border-brand-500 bg-brand-50/60 p-3.5 shadow-ring min-h-[88px] flex flex-col relative">
-                        <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600">核心钩子</div>
-                        <div class="mt-1.5 text-sm font-semibold text-ink-900">"内部"优惠钩子</div>
-                        <p class="mt-1 text-[11px] text-ink-500 leading-relaxed">信任感 + 稀缺性</p>
-                      </div>
-                      <div class="flex items-center justify-center text-ink-300">
-                        <svg class="rotate-90 md:rotate-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-                      </div>
-
-                      <!-- Stage 3: Action -->
-                      <div class="flow-node flex-1 rounded-xl border border-ink-100 bg-white p-3.5 min-h-[88px] flex flex-col justify-center">
-                        <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-ink-400">承接</div>
-                        <div class="mt-1.5 text-sm font-medium text-ink-800">主动下载 App 搜码</div>
-                      </div>
-                    </div>
-
-                    <!-- Outcome KPI strip — consistent with Project 01 -->
-                    <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
-                      <div class="rounded-xl border border-brand-200 bg-brand-50/40 px-4 py-2.5 flex items-center justify-between gap-3">
-                        <div class="text-[10px] font-semibold tracking-[0.18em] uppercase text-brand-600">榜单成绩</div>
-                        <div class="flex items-baseline gap-1.5">
-                          <span class="text-xl md:text-2xl font-bold tracking-tight text-brand-700 leading-none">Top 3</span>
-                          <span class="text-xs text-ink-500">英国旅游榜</span>
-                        </div>
-                      </div>
-                      <div class="rounded-xl border border-brand-200 bg-brand-50/40 px-4 py-2.5 flex items-center justify-between gap-3">
-                        <div class="text-[10px] font-semibold tracking-[0.18em] uppercase text-brand-600">峰值日增</div>
-                        <div class="flex items-baseline gap-1.5">
-                          <span class="text-xl md:text-2xl font-bold tracking-tight text-brand-700 leading-none">1 万+</span>
-                          <span class="text-xs text-ink-500">搜码用户</span>
-                        </div>
-                      </div>
-                    </div>
+                  <!-- 承接 — highlighted core -->
+                  <div class="flow-node flow-node-key flex-[1.3] rounded-xl border-2 border-brand-500 bg-brand-50/60 shadow-ring p-3.5 text-center min-h-[78px] flex flex-col justify-center relative">
+                    <span class="absolute -top-2 left-1/2 -translate-x-1/2 inline-flex items-center rounded-full bg-brand-500 px-2 py-0.5 text-[10px] font-bold tracking-wider uppercase text-white whitespace-nowrap">核心卡点</span>
+                    <div class="text-base font-bold text-ink-900">承接</div>
+                    <div class="mt-0.5 text-[11px] text-ink-600 leading-snug">承接意愿 · 承接能力</div>
+                  </div>
+                  <div class="flex items-center justify-center text-ink-300">
+                    <svg class="rotate-90 md:rotate-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                  </div>
+                  <div class="flow-node flex-1 rounded-xl border border-ink-100 bg-white p-3.5 text-center min-h-[78px] flex flex-col justify-center">
+                    <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-ink-400">终点</div>
+                    <div class="mt-1 text-base font-semibold text-ink-800">支付</div>
                   </div>
                 </div>
-              </li>
+              </div>
 
-              <!-- ===== Sub 2: 数据分析驱动转化 — 八层漏斗 ===== -->
-              <li class="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1">
-                <span class="mt-2 h-1.5 w-1.5 rounded-full bg-brand-500/80"></span>
-                <div>
-                  <div class="flex items-center gap-2 flex-wrap">
-                    <span class="font-semibold text-ink-900">数据分析驱动转化</span>
-                    <span class="text-[10px] font-semibold tracking-wider uppercase text-ink-400 border border-ink-200 rounded px-1.5 py-0.5">站内提效</span>
+              <!-- ===== ② 三个解法 ===== -->
+              <div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+
+                  <!-- 解法 ① 动机 -->
+                  <div class="rounded-xl border-2 border-brand-300 bg-white p-4 flex flex-col card-hover">
+                    <div class="flex items-center gap-2">
+                      <span class="inline-flex items-center justify-center h-7 w-7 rounded-md bg-brand-500 text-white text-xs font-bold shrink-0">①</span>
+                      <span class="text-sm font-semibold text-ink-900">动机</span>
+                    </div>
+                    <div class="mt-1.5 text-[10px] font-semibold tracking-wider uppercase text-brand-600">解决承接意愿</div>
+                    <p class="mt-2.5 text-xs text-ink-700 leading-relaxed flex-1">
+                      用"<span class="font-semibold text-ink-900">内部</span>"优惠钩子（<span class="text-ink-800">信任感 + 稀缺性</span>），驱动用户从播放主动下载搜码
+                    </p>
+                    <div class="mt-3 pt-3 border-t border-ink-100 space-y-1.5">
+                      <div class="flex items-start gap-1.5">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-brand-500 shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"/></svg>
+                        <span class="text-[11px] text-ink-600 leading-snug">助推 TrainPal 冲上<span class="text-brand-700 font-bold">英国旅游榜 Top 3</span></span>
+                      </div>
+                      <div class="flex items-start gap-1.5">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-brand-500 shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"/></svg>
+                        <span class="text-[11px] text-ink-600 leading-snug">峰值日增 <span class="text-brand-700 font-bold">1 万+</span> 搜码用户</span>
+                      </div>
+                    </div>
                   </div>
 
-                  <div class="mt-4 rounded-2xl border border-ink-100 bg-ink-50/40 p-4 md:p-5">
+                  <!-- 解法 ② App 端入口 -->
+                  <div class="rounded-xl border-2 border-brand-300 bg-white p-4 flex flex-col card-hover">
+                    <div class="flex items-center gap-2">
+                      <span class="inline-flex items-center justify-center h-7 w-7 rounded-md bg-brand-500 text-white text-xs font-bold shrink-0">②</span>
+                      <span class="text-sm font-semibold text-ink-900">App 端入口</span>
+                    </div>
+                    <div class="mt-1.5 text-[10px] font-semibold tracking-wider uppercase text-brand-600">解决 App 端承接能力</div>
+                    <p class="mt-2.5 text-xs text-ink-700 leading-relaxed">
+                      发现搜码入口过深、未登录态无法进入；首页归属其他业务线推动受阻下，设计"<span class="font-semibold text-ink-900">连点三下</span>"轻量隐藏入口
+                    </p>
+                    <div class="mt-1.5 flex items-center gap-1.5 flex-wrap">
+                      <span class="inline-flex items-center rounded-full border border-brand-200 bg-brand-50/60 px-1.5 py-0.5 text-[9px] font-medium text-brand-600 tracking-wide">呼应内部钩子</span>
+                    </div>
+                    <div class="mt-auto pt-3 mt-3 border-t border-ink-100 flex items-center justify-between gap-2">
+                      <span class="text-[11px] text-ink-600">播放 → 搜码效率</span>
+                      <span class="text-lg font-bold text-brand-700 leading-none">↑ 10 倍</span>
+                    </div>
+                  </div>
 
-                    <!-- Funnel + annotations layout -->
-                    <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] gap-4 lg:gap-6 items-start">
-
-                      <!-- ===== Funnel bars ===== -->
+                  <!-- 解法 ③ H5 端入口 -->
+                  <div class="rounded-xl border-2 border-brand-300 bg-white p-4 flex flex-col card-hover">
+                    <div class="flex items-center gap-2">
+                      <span class="inline-flex items-center justify-center h-7 w-7 rounded-md bg-brand-500 text-white text-xs font-bold shrink-0">③</span>
+                      <span class="text-sm font-semibold text-ink-900">H5 端入口</span>
+                    </div>
+                    <div class="mt-1.5 text-[10px] font-semibold tracking-wider uppercase text-brand-600">解决 H5 端流量承接</div>
+                    <p class="mt-2.5 text-xs text-ink-700 leading-relaxed flex-1">
+                      数据分析发现大量用户没下载 App、在 <span class="font-semibold text-ink-900">H5 搜码</span>，推动 H5 首页上线搜码入口
+                    </p>
+                    <div class="mt-1.5 flex items-center gap-1.5">
+                      <span class="inline-flex items-center rounded-full border border-ink-200 bg-ink-50 px-1.5 py-0.5 text-[9px] font-medium text-ink-500 tracking-wide">A/B 实验验证</span>
+                    </div>
+                    <div class="mt-3 pt-3 border-t border-ink-100 grid grid-cols-2 gap-2">
                       <div>
-                        <div class="flex items-center justify-between mb-2">
-                          <div class="text-[10px] font-semibold tracking-[0.18em] uppercase text-ink-500">八层转化漏斗</div>
-                          <div class="text-[10px] text-ink-400">关键流失点 ↓</div>
-                        </div>
+                        <div class="text-[10px] text-ink-500">大盘支付 UV</div>
+                        <div class="text-xs font-semibold text-ink-800 mt-0.5">无损</div>
+                      </div>
+                      <div>
+                        <div class="text-[10px] text-ink-500">H5 承接效率</div>
+                        <div class="text-xs font-semibold text-brand-700 mt-0.5">↑ 提升</div>
+                      </div>
+                    </div>
+                  </div>
 
-                        <div class="space-y-1">
-                          <!-- 播放 row — with opt 2 pill INSIDE the bar (right-aligned) -->
-                          <div class="flex items-center gap-2">
-                            <span class="w-12 shrink-0 text-[11px] text-brand-700 font-semibold text-right">播放</span>
-                            <div class="h-7 rounded-md bg-brand-400/70 relative flex items-center justify-end pr-2" style="width:100%;">
-                              <span class="inline-flex items-center gap-1 text-[10px] font-semibold tracking-wider uppercase text-white bg-ink-800 rounded-full px-2 py-0.5 whitespace-nowrap">
-                                <span class="inline-flex items-center justify-center h-3.5 w-3.5 rounded-full bg-white text-ink-800 text-[9px] font-bold">2</span>
-                                播放 → H5 承接
-                              </span>
-                            </div>
-                          </div>
-                          <!-- 搜码 row — opt 1 pill + connector arrow pointing right to opt1 card -->
-                          <div id="funnel-souma-row" class="flex items-center gap-2 relative">
-                            <span class="w-12 shrink-0 text-[11px] text-brand-700 font-semibold text-right">搜码</span>
-                            <div class="h-7 rounded-md bg-brand-500 ring-2 ring-brand-300 relative flex items-center justify-end pr-2" style="width:88%;">
-                              <span class="inline-flex items-center gap-1 text-[10px] font-semibold tracking-wider uppercase text-white bg-brand-700 rounded-full px-2 py-0.5 whitespace-nowrap shadow-soft">
-                                <span class="inline-flex items-center justify-center h-3.5 w-3.5 rounded-full bg-white text-brand-700 text-[9px] font-bold">1</span>
-                                播放 → 搜码（App）
-                              </span>
-                            </div>
-                            <!-- small arrow on the row that hints "linked to ↑10x" — visible on lg+ -->
-                            <svg class="hidden lg:block absolute right-[-22px] top-1/2 -translate-y-1/2 text-brand-500" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-                          </div>
-                          <div class="flex items-center gap-2">
-                            <span class="w-12 shrink-0 text-[11px] text-ink-500 text-right">登录</span>
-                            <div class="h-7 rounded-md bg-brand-400/60" style="width:74%;"></div>
-                          </div>
-                          <div class="flex items-center gap-2">
-                            <span class="w-12 shrink-0 text-[11px] text-ink-500 text-right">领券</span>
-                            <div class="h-7 rounded-md bg-brand-400/55" style="width:62%;"></div>
-                          </div>
-                          <div class="flex items-center gap-2">
-                            <span class="w-12 shrink-0 text-[11px] text-ink-500 text-right">列表</span>
-                            <div class="h-7 rounded-md bg-brand-400/50" style="width:52%;"></div>
-                          </div>
-                          <div class="flex items-center gap-2">
-                            <span class="w-12 shrink-0 text-[11px] text-ink-500 text-right">填写</span>
-                            <div class="h-7 rounded-md bg-brand-400/45" style="width:42%;"></div>
-                          </div>
-                          <div class="flex items-center gap-2">
-                            <span class="w-12 shrink-0 text-[11px] text-ink-500 text-right">支付</span>
-                            <div class="h-7 rounded-md bg-brand-400/40" style="width:32%;"></div>
-                          </div>
-                          <div class="flex items-center gap-2">
-                            <span class="w-12 shrink-0 text-[11px] text-ink-500 text-right">完成</span>
-                            <div class="h-7 rounded-md bg-brand-400/35" style="width:24%;"></div>
-                          </div>
-                        </div>
+                </div>
+              </div>
 
-                        <!-- Overall conversion outcome -->
-                        <div class="mt-4 rounded-xl border border-brand-200 bg-brand-50/40 px-4 py-2.5 flex items-center justify-between gap-3">
-                          <div class="text-[10px] font-semibold tracking-[0.18em] uppercase text-brand-600">整体转化率</div>
-                          <div class="flex items-baseline gap-1.5">
-                            <span class="text-xl md:text-2xl font-bold tracking-tight text-brand-700 leading-none">10% → 15%</span>
-                          </div>
+              <!-- ===== ③ 诊断工具 + 整体结果 ===== -->
+              <div>
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="text-[11px] font-bold tracking-[0.18em] uppercase text-ink-500">③ 数据分析 · 八层转化漏斗</span>
+                  <div class="h-px flex-1 bg-ink-200/60"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,240px)] gap-4 lg:gap-6 items-center">
+                  <!-- Funnel — diagnostic tool -->
+                  <div>
+                    <div class="text-[10px] text-ink-400 mb-2">逐层定位流失</div>
+                    <div class="space-y-1">
+                      <div class="flex items-center gap-2">
+                        <span class="w-12 shrink-0 text-[11px] text-brand-700 font-semibold text-right">播放</span>
+                        <div class="h-6 rounded-md bg-brand-400/70" style="width:100%;"></div>
+                      </div>
+                      <!-- 搜码 row highlighted as the target layer of all 3 解法 -->
+                      <div class="flex items-center gap-2">
+                        <span class="w-12 shrink-0 text-[11px] text-brand-700 font-semibold text-right">搜码</span>
+                        <div class="h-6 rounded-md bg-brand-500 ring-2 ring-brand-300 relative flex items-center justify-end pr-2" style="width:88%;">
+                          <span class="text-[9px] font-semibold tracking-wider uppercase text-white whitespace-nowrap">三解法目标层</span>
                         </div>
                       </div>
-
-                      <!-- ===== Annotations side ===== -->
-                      <div class="space-y-3">
-                        <!-- Optimization 1 -->
-                        <div id="opt1-anchor" data-echo="B" class="rounded-xl border-2 border-brand-500 bg-brand-50/40 p-4 shadow-ring relative">
-                          <div class="flex items-center gap-2">
-                            <span class="inline-flex items-center justify-center h-6 w-6 rounded-md bg-brand-500 text-white text-[10px] font-bold shrink-0">1</span>
-                            <span class="text-sm font-semibold text-ink-900">优化点 1 · App 首页"连点三下"隐藏入口</span>
-                          </div>
-                          <div class="mt-1 text-[10px] font-semibold tracking-wider uppercase text-brand-600">环节：播放 → 搜码（App）</div>
-                          <p class="mt-2 text-[11px] text-ink-500 leading-relaxed">
-                            <span class="text-ink-600">发现：</span>搜码入口过深，播放后流失严重<br/>
-                            <span class="text-ink-600">方案：</span>以"<span class="text-ink-800 font-medium">内部操作</span>"呼应站外"内部优惠"钩子，强化内部专属感
-                          </p>
-                          <div class="mt-3 rounded-lg border border-brand-200 bg-white px-3 py-2 flex items-center justify-between gap-3">
-                            <div class="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-600">播放 → 搜码</div>
-                            <div class="flex items-baseline gap-1.5">
-                              <span class="text-xl md:text-2xl font-bold tracking-tight text-brand-700 leading-none">↑ 10 倍</span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Optimization 2 -->
-                        <div class="rounded-xl border border-ink-200 bg-white p-4">
-                          <div class="flex items-center gap-2">
-                            <span class="inline-flex items-center justify-center h-6 w-6 rounded-md bg-ink-800 text-white text-[10px] font-bold shrink-0">2</span>
-                            <span class="text-sm font-semibold text-ink-900">优化点 2 · H5 首页搜码入口</span>
-                          </div>
-                          <div class="mt-1 text-[10px] font-semibold tracking-wider uppercase text-ink-500">环节：播放 → 承接（H5 端）</div>
-                          <p class="mt-2 text-[11px] text-ink-500 leading-relaxed">
-                            <span class="text-ink-600">发现：</span>来源分析显示大量用户没下载 App，而是跑去 H5 端搜码<br/>
-                            <span class="text-ink-600">方案：</span>推动 H5 首页上线搜码入口，承接这部分流量；A/B 验证
-                          </p>
-                          <div class="mt-3 grid grid-cols-2 gap-2">
-                            <div class="rounded-lg border border-ink-100 bg-ink-50/60 px-2.5 py-1.5">
-                              <div class="text-[10px] text-ink-500">大盘支付 UV</div>
-                              <div class="text-xs font-semibold text-ink-800 mt-0.5">无负向影响</div>
-                            </div>
-                            <div class="rounded-lg border border-ink-100 bg-ink-50/60 px-2.5 py-1.5">
-                              <div class="text-[10px] text-ink-500">H5 承接效率</div>
-                              <div class="text-xs font-semibold text-ink-800 mt-0.5">↑ 提升</div>
-                            </div>
-                          </div>
-                        </div>
+                      <div class="flex items-center gap-2">
+                        <span class="w-12 shrink-0 text-[11px] text-ink-500 text-right">登录</span>
+                        <div class="h-6 rounded-md bg-brand-400/60" style="width:74%;"></div>
                       </div>
+                      <div class="flex items-center gap-2">
+                        <span class="w-12 shrink-0 text-[11px] text-ink-500 text-right">领券</span>
+                        <div class="h-6 rounded-md bg-brand-400/55" style="width:62%;"></div>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <span class="w-12 shrink-0 text-[11px] text-ink-500 text-right">列表</span>
+                        <div class="h-6 rounded-md bg-brand-400/50" style="width:52%;"></div>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <span class="w-12 shrink-0 text-[11px] text-ink-500 text-right">填写</span>
+                        <div class="h-6 rounded-md bg-brand-400/45" style="width:42%;"></div>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <span class="w-12 shrink-0 text-[11px] text-ink-500 text-right">支付</span>
+                        <div class="h-6 rounded-md bg-brand-400/40" style="width:32%;"></div>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <span class="w-12 shrink-0 text-[11px] text-ink-500 text-right">完成</span>
+                        <div class="h-6 rounded-md bg-brand-400/35" style="width:24%;"></div>
+                      </div>
+                    </div>
+                  </div>
 
+                  <!-- Overall conversion outcome -->
+                  <div class="rounded-2xl border-2 border-brand-500 bg-brand-50/60 p-4 md:p-5 shadow-ring text-center">
+                    <div class="text-[10px] font-semibold tracking-[0.18em] uppercase text-brand-600">整体转化率</div>
+                    <div class="mt-2 flex items-baseline justify-center gap-2">
+                      <span class="text-lg text-ink-400 line-through leading-none">10%</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-brand-500"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                      <span class="text-3xl md:text-4xl font-bold tracking-tight text-brand-700 leading-none">15%</span>
                     </div>
                   </div>
                 </div>
-              </li>
+              </div>
 
-            </ul>
+            </div>
 
           </div>
         </article>
@@ -1283,59 +1386,6 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-    // Project 3 — draw echo connector line (hook A → optimization 1 B), desktop only
-    (function () {
-      const canvas = document.getElementById('p3-echo-canvas');
-      const svg = document.getElementById('p3-echo-line');
-      const path = document.getElementById('p3-echo-path');
-      const labelFO = document.getElementById('p3-echo-label-fo');
-      const labelEl = document.getElementById('p3-echo-label');
-      const hook = document.getElementById('hook-anchor');
-      const opt1 = document.getElementById('opt1-anchor');
-      if (!canvas || !svg || !path || !hook || !opt1 || !labelFO || !labelEl) return;
-
-      function draw() {
-        if (window.innerWidth < 1024) {
-          path.setAttribute('d', '');
-          labelFO.setAttribute('width', 0);
-          labelFO.setAttribute('height', 0);
-          return;
-        }
-        const c = canvas.getBoundingClientRect();
-        const a = hook.getBoundingClientRect();
-        const b = opt1.getBoundingClientRect();
-        // anchor A: bottom-center of hook card
-        const ax = a.left + a.width / 2 - c.left;
-        const ay = a.bottom - c.top + 2;
-        // anchor B: top-center of opt1 card
-        const bx = b.left + b.width / 2 - c.left;
-        const by = b.top - c.top - 2;
-        // Smooth S-curve via two control points (going DOWN then sweeping toward B)
-        const dy = by - ay;
-        const cp1x = ax;
-        const cp1y = ay + dy * 0.55;
-        const cp2x = bx;
-        const cp2y = by - dy * 0.45;
-        path.setAttribute('d', `M ${ax} ${ay} C ${cp1x} ${cp1y}, ${cp2x} ${cp2y}, ${bx} ${by}`);
-
-        // Place label at vertical midpoint along the curve, but offset horizontally if A and B are close
-        const midX = (ax + bx) / 2;
-        const midY = ay + dy * 0.5;
-        const w = labelEl.offsetWidth || 200;
-        const h = labelEl.offsetHeight || 26;
-        labelFO.setAttribute('x', midX - w / 2);
-        labelFO.setAttribute('y', midY - h / 2);
-        labelFO.setAttribute('width', w + 8);
-        labelFO.setAttribute('height', h + 8);
-      }
-      window.addEventListener('load', draw);
-      window.addEventListener('resize', draw);
-      setTimeout(draw, 60);
-      setTimeout(draw, 300);
-      setTimeout(draw, 800);
-      setTimeout(draw, 1500);
-    })();
   </script>
 </body>
 </html>
